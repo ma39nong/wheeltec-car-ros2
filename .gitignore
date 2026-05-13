@@ -1,0 +1,66 @@
+data/scene_01/images/*
+!data/scene_01/images/.gitkeep
+workspace/colmap/database.db
+workspace/colmap/sparse/*
+!workspace/colmap/sparse/.gitkeep
+workspace/colmap/sparse_txt/*
+!workspace/colmap/sparse_txt/.gitkeep
+results/exports/*.zip
+results/exports/export_*/
+results/trajectory_plots/*.tum
+results/screenshots/*.png
+results/screenshots/*.jpg
+results/logs/*.log
+
+# Older/heavy experiment trees are kept locally but not uploaded by default.
+data/
+runs/
+baselines/
+workspace/
+kr2_20260508_lidar_colmap_eval/
+kr2_learned_descriptors_phase2/outputs/
+kr2_learned_descriptors_phase2/runs/
+
+# Large raw datasets and generated vision artifacts.
+bag/
+**/*.db3
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+# Extracted/keyframe RGB-D image dumps are reproducible from rosbag.
+**/data/extracted/
+**/data/keyframes/
+**/data/visual_loop/
+**/images/
+**/rgb/
+**/depth/
+**/*.png
+**/*.jpg
+**/*.jpeg
+
+# Keep report figures/results that are useful for documentation.
+!map/*.png
+!map/*.pgm
+!**/results/**/*.png
+!**/figures/**/*.png
+!**/reports/**/*.png
+
+# Heavy COLMAP/LightGlue intermediate outputs.
+**/workspace/colmap/database.db
+**/workspace/colmap/sparse/
+**/workspace/sparse/
+**/workspace/dense/
+**/workspace/colmap/lightglue_raw_matches.txt
+**/*lightglue_raw_matches.txt
+**/workspace/colmap/*.bin
+**/*.bin
+**/*.npz
+**/outputs/superpoint_lightglue*/
+**/outputs/*superpoint_lightglue*/
+
+# Runtime/cache files.
+**/__pycache__/
+**/*.pyc
+**/logs/
+**/*.log

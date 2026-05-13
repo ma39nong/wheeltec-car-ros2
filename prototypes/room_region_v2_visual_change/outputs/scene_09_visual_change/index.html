@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V2 Visual-Change Region Demo</title>
+  <style>
+    body { margin: 0; padding: 28px; font-family: Arial, sans-serif; background: #f5f7fa; color: #16202a; }
+    header, main { max-width: 1180px; margin: 0 auto; }
+    header { margin-bottom: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .note { margin: 0; color: #5d6878; line-height: 1.5; }
+    section { background: white; border: 1px solid #dfe5ec; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+    h2 { margin: 0 0 6px; font-size: 19px; }
+    h3 { margin: 0 0 6px; font-size: 15px; }
+    h2 span { float: right; color: #687586; font-size: 13px; font-weight: 400; }
+    p { color: #576474; margin: 0 0 14px; }
+    .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .boundary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .boundary-card { border: 1px solid #e0e5eb; border-radius: 6px; padding: 12px; background: #fbfcfd; }
+    .boundary-card img { aspect-ratio: 8 / 3; object-fit: cover; border: 1px solid #e5e9ef; border-radius: 4px; }
+    .boundary-names { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; color: #4f5b69; font-size: 12px; overflow-wrap: anywhere; }
+    object { width: 100%; height: 320px; border: 1px solid #e0e5eb; border-radius: 6px; background: #fbfcfd; }
+    figure { margin: 0; border: 1px solid #e0e5eb; border-radius: 6px; overflow: hidden; background: #fbfcfd; }
+    img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    figcaption { padding: 7px 8px; font-size: 12px; color: #4f5b69; overflow-wrap: anywhere; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border-bottom: 1px solid #e5e9ef; padding: 8px; text-align: left; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>V2 Visual-Change Region Demo</h1>
+    <p class="note">Boundaries are selected from the largest adjacent-frame color and texture changes, with a minimum segment length constraint.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Visual Change Score Curve</h2>
+      <object data="visual_change_curve.svg" type="image/svg+xml"></object>
+    </section>
+    <section>
+      <h2>Selected Boundary Reviews</h2>
+      <div class="boundary-grid">
+      <article class="boundary-card">
+        <h3>Boundary 70 -> 71</h3>
+        <p>score = 2.7242</p>
+        <img src="boundary_pairs/boundary_070_to_071.jpg" alt="Boundary 70 to 71">
+        <div class="boundary-names">
+          <span>000070_1773736700742994103.png</span>
+          <span>000071_1773736701163348202.png</span>
+        </div>
+      </article>
+
+
+      <article class="boundary-card">
+        <h3>Boundary 106 -> 107</h3>
+        <p>score = 3.0311</p>
+        <img src="boundary_pairs/boundary_106_to_107.jpg" alt="Boundary 106 to 107">
+        <div class="boundary-names">
+          <span>000106_1773736715118810147.png</span>
+          <span>000107_1773736715508006185.png</span>
+        </div>
+      </article>
+
+
+      <article class="boundary-card">
+        <h3>Boundary 159 -> 160</h3>
+        <p>score = 3.2032</p>
+        <img src="boundary_pairs/boundary_159_to_160.jpg" alt="Boundary 159 to 160">
+        <div class="boundary-names">
+          <span>000159_1773736736738145573.png</span>
+          <span>000160_1773736737124423668.png</span>
+        </div>
+      </article>
+
+
+      <article class="boundary-card">
+        <h3>Boundary 198 -> 199</h3>
+        <p>score = 3.1227</p>
+        <img src="boundary_pairs/boundary_198_to_199.jpg" alt="Boundary 198 to 199">
+        <div class="boundary-names">
+          <span>000198_1773736752711785232.png</span>
+          <span>000199_1773736753102657951.png</span>
+        </div>
+      </article>
+</div>
+    </section>
+    <section>
+      <h2>Top Visual Change Scores</h2>
+      <table><thead><tr><th>Boundary</th><th>Score</th></tr></thead><tbody><tr><td>159 -> 160</td><td>3.2032</td></tr>
+<tr><td>198 -> 199</td><td>3.1227</td></tr>
+<tr><td>190 -> 191</td><td>3.0909</td></tr>
+<tr><td>106 -> 107</td><td>3.0311</td></tr>
+<tr><td>140 -> 141</td><td>2.9822</td></tr>
+<tr><td>196 -> 197</td><td>2.9804</td></tr>
+<tr><td>158 -> 159</td><td>2.9633</td></tr>
+<tr><td>107 -> 108</td><td>2.9583</td></tr>
+<tr><td>195 -> 196</td><td>2.9313</td></tr>
+<tr><td>138 -> 139</td><td>2.9036</td></tr>
+<tr><td>197 -> 198</td><td>2.8125</td></tr>
+<tr><td>210 -> 211</td><td>2.7888</td></tr></tbody></table>
+    </section>
+    
+      <section>
+        <h2>会议室内侧走廊前半段 <span>visual_region_01</span></h2>
+        <p>Frames 0 - 70 · 71 images · sequence start</p>
+        <div class="thumbs"><figure><img src="thumbnails/visual_region_01/000000_1773736671619937584.jpg" alt="000000_1773736671619937584.png"><figcaption>000000_1773736671619937584.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_01/000014_1773736677458351744.jpg" alt="000014_1773736677458351744.png"><figcaption>000014_1773736677458351744.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_01/000028_1773736683566407383.jpg" alt="000028_1773736683566407383.png"><figcaption>000028_1773736683566407383.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_01/000042_1773736689286678216.jpg" alt="000042_1773736689286678216.png"><figcaption>000042_1773736689286678216.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_01/000056_1773736695055890014.jpg" alt="000056_1773736695055890014.png"><figcaption>000056_1773736695055890014.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_01/000070_1773736700742994103.jpg" alt="000070_1773736700742994103.png"><figcaption>000070_1773736700742994103.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>会议室大屏幕处走廊 <span>visual_region_02</span></h2>
+        <p>Frames 71 - 106 · 36 images · visual change score=2.7242</p>
+        <div class="thumbs"><figure><img src="thumbnails/visual_region_02/000071_1773736701163348202.jpg" alt="000071_1773736701163348202.png"><figcaption>000071_1773736701163348202.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_02/000078_1773736704030193588.jpg" alt="000078_1773736704030193588.png"><figcaption>000078_1773736704030193588.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_02/000085_1773736706815678076.jpg" alt="000085_1773736706815678076.png"><figcaption>000085_1773736706815678076.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_02/000092_1773736709522512429.jpg" alt="000092_1773736709522512429.png"><figcaption>000092_1773736709522512429.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_02/000099_1773736712214848376.jpg" alt="000099_1773736712214848376.png"><figcaption>000099_1773736712214848376.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_02/000106_1773736715118810147.jpg" alt="000106_1773736715118810147.png"><figcaption>000106_1773736715118810147.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>会议室外侧走廊 <span>visual_region_03</span></h2>
+        <p>Frames 107 - 159 · 53 images · visual change score=3.0311</p>
+        <div class="thumbs"><figure><img src="thumbnails/visual_region_03/000107_1773736715508006185.jpg" alt="000107_1773736715508006185.png"><figcaption>000107_1773736715508006185.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_03/000117_1773736719654356821.jpg" alt="000117_1773736719654356821.png"><figcaption>000117_1773736719654356821.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_03/000128_1773736724079131958.jpg" alt="000128_1773736724079131958.png"><figcaption>000128_1773736724079131958.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_03/000138_1773736728148724368.jpg" alt="000138_1773736728148724368.png"><figcaption>000138_1773736728148724368.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_03/000149_1773736732574889867.jpg" alt="000149_1773736732574889867.png"><figcaption>000149_1773736732574889867.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_03/000159_1773736736738145573.jpg" alt="000159_1773736736738145573.png"><figcaption>000159_1773736736738145573.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>会议室杂物区 <span>visual_region_04</span></h2>
+        <p>Frames 160 - 198 · 39 images · visual change score=3.2032</p>
+        <div class="thumbs"><figure><img src="thumbnails/visual_region_04/000160_1773736737124423668.jpg" alt="000160_1773736737124423668.png"><figcaption>000160_1773736737124423668.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_04/000168_1773736740369311864.jpg" alt="000168_1773736740369311864.png"><figcaption>000168_1773736740369311864.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_04/000175_1773736743176133489.jpg" alt="000175_1773736743176133489.png"><figcaption>000175_1773736743176133489.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_04/000183_1773736746508574810.jpg" alt="000183_1773736746508574810.png"><figcaption>000183_1773736746508574810.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_04/000190_1773736749522601084.jpg" alt="000190_1773736749522601084.png"><figcaption>000190_1773736749522601084.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_04/000198_1773736752711785232.jpg" alt="000198_1773736752711785232.png"><figcaption>000198_1773736752711785232.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>会议室内侧走廊后半段 <span>visual_region_05</span></h2>
+        <p>Frames 199 - 235 · 37 images · visual change score=3.1227</p>
+        <div class="thumbs"><figure><img src="thumbnails/visual_region_05/000199_1773736753102657951.jpg" alt="000199_1773736753102657951.png"><figcaption>000199_1773736753102657951.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_05/000206_1773736755903165398.jpg" alt="000206_1773736755903165398.png"><figcaption>000206_1773736755903165398.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_05/000213_1773736758902503825.jpg" alt="000213_1773736758902503825.png"><figcaption>000213_1773736758902503825.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_05/000221_1773736762192612568.jpg" alt="000221_1773736762192612568.png"><figcaption>000221_1773736762192612568.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_05/000228_1773736765070798048.jpg" alt="000228_1773736765070798048.png"><figcaption>000228_1773736765070798048.png</figcaption></figure>
+<figure><img src="thumbnails/visual_region_05/000235_1773736767833959339.jpg" alt="000235_1773736767833959339.png"><figcaption>000235_1773736767833959339.png</figcaption></figure></div>
+      </section>
+
+  </main>
+</body>
+</html>

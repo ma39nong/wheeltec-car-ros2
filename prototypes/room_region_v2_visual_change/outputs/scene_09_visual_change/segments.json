@@ -1,0 +1,208 @@
+{
+  "image_dir": "data/scene_08_20260317_first_loop_then_stride4/first_loop_segment/keyframes_stride4_approx250/rgb",
+  "image_count": 236,
+  "strategy": "visual_color_texture_change",
+  "boundaries": [
+    71,
+    107,
+    160,
+    199
+  ],
+  "boundary_reviews": [
+    {
+      "boundary": 71,
+      "before_index": 70,
+      "after_index": 71,
+      "before_image": "000070_1773736700742994103.png",
+      "after_image": "000071_1773736701163348202.png",
+      "score": 2.7242259979248047,
+      "pair_image": "boundary_pairs/boundary_070_to_071.jpg"
+    },
+    {
+      "boundary": 107,
+      "before_index": 106,
+      "after_index": 107,
+      "before_image": "000106_1773736715118810147.png",
+      "after_image": "000107_1773736715508006185.png",
+      "score": 3.0310592651367188,
+      "pair_image": "boundary_pairs/boundary_106_to_107.jpg"
+    },
+    {
+      "boundary": 160,
+      "before_index": 159,
+      "after_index": 160,
+      "before_image": "000159_1773736736738145573.png",
+      "after_image": "000160_1773736737124423668.png",
+      "score": 3.203162908554077,
+      "pair_image": "boundary_pairs/boundary_159_to_160.jpg"
+    },
+    {
+      "boundary": 199,
+      "before_index": 198,
+      "after_index": 199,
+      "before_image": "000198_1773736752711785232.png",
+      "after_image": "000199_1773736753102657951.png",
+      "score": 3.1226584911346436,
+      "pair_image": "boundary_pairs/boundary_198_to_199.jpg"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "visual_region_01",
+      "label": "\u4f1a\u8bae\u5ba4\u5185\u4fa7\u8d70\u5eca\u524d\u534a\u6bb5",
+      "start_index": 0,
+      "end_index": 70,
+      "frame_count": 71,
+      "start_image": "000000_1773736671619937584.png",
+      "end_image": "000070_1773736700742994103.png",
+      "boundary_reason": "sequence start",
+      "representatives": "000000_1773736671619937584.png;000014_1773736677458351744.png;000028_1773736683566407383.png;000042_1773736689286678216.png;000056_1773736695055890014.png;000070_1773736700742994103.png"
+    },
+    {
+      "region_id": "visual_region_02",
+      "label": "\u4f1a\u8bae\u5ba4\u5927\u5c4f\u5e55\u5904\u8d70\u5eca",
+      "start_index": 71,
+      "end_index": 106,
+      "frame_count": 36,
+      "start_image": "000071_1773736701163348202.png",
+      "end_image": "000106_1773736715118810147.png",
+      "boundary_reason": "visual change score=2.7242",
+      "representatives": "000071_1773736701163348202.png;000078_1773736704030193588.png;000085_1773736706815678076.png;000092_1773736709522512429.png;000099_1773736712214848376.png;000106_1773736715118810147.png"
+    },
+    {
+      "region_id": "visual_region_03",
+      "label": "\u4f1a\u8bae\u5ba4\u5916\u4fa7\u8d70\u5eca",
+      "start_index": 107,
+      "end_index": 159,
+      "frame_count": 53,
+      "start_image": "000107_1773736715508006185.png",
+      "end_image": "000159_1773736736738145573.png",
+      "boundary_reason": "visual change score=3.0311",
+      "representatives": "000107_1773736715508006185.png;000117_1773736719654356821.png;000128_1773736724079131958.png;000138_1773736728148724368.png;000149_1773736732574889867.png;000159_1773736736738145573.png"
+    },
+    {
+      "region_id": "visual_region_04",
+      "label": "\u4f1a\u8bae\u5ba4\u6742\u7269\u533a",
+      "start_index": 160,
+      "end_index": 198,
+      "frame_count": 39,
+      "start_image": "000160_1773736737124423668.png",
+      "end_image": "000198_1773736752711785232.png",
+      "boundary_reason": "visual change score=3.2032",
+      "representatives": "000160_1773736737124423668.png;000168_1773736740369311864.png;000175_1773736743176133489.png;000183_1773736746508574810.png;000190_1773736749522601084.png;000198_1773736752711785232.png"
+    },
+    {
+      "region_id": "visual_region_05",
+      "label": "\u4f1a\u8bae\u5ba4\u5185\u4fa7\u8d70\u5eca\u540e\u534a\u6bb5",
+      "start_index": 199,
+      "end_index": 235,
+      "frame_count": 37,
+      "start_image": "000199_1773736753102657951.png",
+      "end_image": "000235_1773736767833959339.png",
+      "boundary_reason": "visual change score=3.1227",
+      "representatives": "000199_1773736753102657951.png;000206_1773736755903165398.png;000213_1773736758902503825.png;000221_1773736762192612568.png;000228_1773736765070798048.png;000235_1773736767833959339.png"
+    }
+  ],
+  "top_change_scores": [
+    {
+      "after_index": 159,
+      "before_index": 160,
+      "score": 3.203162908554077
+    },
+    {
+      "after_index": 198,
+      "before_index": 199,
+      "score": 3.1226584911346436
+    },
+    {
+      "after_index": 190,
+      "before_index": 191,
+      "score": 3.0909488201141357
+    },
+    {
+      "after_index": 106,
+      "before_index": 107,
+      "score": 3.0310592651367188
+    },
+    {
+      "after_index": 140,
+      "before_index": 141,
+      "score": 2.9822371006011963
+    },
+    {
+      "after_index": 196,
+      "before_index": 197,
+      "score": 2.980400800704956
+    },
+    {
+      "after_index": 158,
+      "before_index": 159,
+      "score": 2.963347911834717
+    },
+    {
+      "after_index": 107,
+      "before_index": 108,
+      "score": 2.9583377838134766
+    },
+    {
+      "after_index": 195,
+      "before_index": 196,
+      "score": 2.931262493133545
+    },
+    {
+      "after_index": 138,
+      "before_index": 139,
+      "score": 2.903559923171997
+    },
+    {
+      "after_index": 197,
+      "before_index": 198,
+      "score": 2.812497615814209
+    },
+    {
+      "after_index": 210,
+      "before_index": 211,
+      "score": 2.788831949234009
+    },
+    {
+      "after_index": 70,
+      "before_index": 71,
+      "score": 2.7242259979248047
+    },
+    {
+      "after_index": 211,
+      "before_index": 212,
+      "score": 2.7111926078796387
+    },
+    {
+      "after_index": 93,
+      "before_index": 94,
+      "score": 2.685119152069092
+    },
+    {
+      "after_index": 101,
+      "before_index": 102,
+      "score": 2.683466911315918
+    },
+    {
+      "after_index": 104,
+      "before_index": 105,
+      "score": 2.6635775566101074
+    },
+    {
+      "after_index": 213,
+      "before_index": 214,
+      "score": 2.663357973098755
+    },
+    {
+      "after_index": 69,
+      "before_index": 70,
+      "score": 2.6556951999664307
+    },
+    {
+      "after_index": 212,
+      "before_index": 213,
+      "score": 2.6368629932403564
+    }
+  ]
+}

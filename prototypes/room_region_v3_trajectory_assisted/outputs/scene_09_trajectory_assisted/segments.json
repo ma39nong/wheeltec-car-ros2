@@ -1,0 +1,72 @@
+{
+  "image_dir": "data/scene_08_20260317_first_loop_then_stride4/first_loop_segment/keyframes_stride4_approx250/rgb",
+  "images_txt": "baselines/scene_09_20260317_firstloop_stride4_236/runs/scene_09_docker_cpu_optimized_20260430_164041/workspace/colmap/sparse_txt/images.txt",
+  "trajectory_tum": "baselines/scene_09_20260317_firstloop_stride4_236/runs/scene_09_docker_cpu_optimized_20260430_164041/results/trajectory_plots/trajectory.tum",
+  "trajectory_tum_rows": 236,
+  "matched_pose_count": 236,
+  "image_count": 236,
+  "strategy": "colmap_trajectory_path_length",
+  "boundaries": [
+    58,
+    106,
+    157,
+    203
+  ],
+  "regions": [
+    {
+      "region_id": "trajectory_region_01",
+      "label": "Trajectory Region 1",
+      "start_index": 0,
+      "end_index": 57,
+      "frame_count": 58,
+      "start_image": "000000_1773736671619937584.png",
+      "end_image": "000057_1773736695451930487.png",
+      "path_length": 5.337646816604311,
+      "representatives": "000000_1773736671619937584.png;000011_1773736676142770390.png;000023_1773736681255185865.png;000034_1773736685986494522.png;000046_1773736690949942254.png;000057_1773736695451930487.png"
+    },
+    {
+      "region_id": "trajectory_region_02",
+      "label": "Trajectory Region 2",
+      "start_index": 58,
+      "end_index": 105,
+      "frame_count": 48,
+      "start_image": "000058_1773736695826768285.png",
+      "end_image": "000105_1773736714610690416.png",
+      "path_length": 5.22501449798288,
+      "representatives": "000058_1773736695826768285.png;000067_1773736699518125812.png;000077_1773736703623507821.png;000086_1773736707206906425.png;000096_1773736711058461655.png;000105_1773736714610690416.png"
+    },
+    {
+      "region_id": "trajectory_region_03",
+      "label": "Trajectory Region 3",
+      "start_index": 106,
+      "end_index": 156,
+      "frame_count": 51,
+      "start_image": "000106_1773736715118810147.png",
+      "end_image": "000156_1773736735435861564.png",
+      "path_length": 5.191430923067283,
+      "representatives": "000106_1773736715118810147.png;000116_1773736719246926058.png;000126_1773736723286954491.png;000136_1773736727338623877.png;000146_1773736731373945405.png;000156_1773736735435861564.png"
+    },
+    {
+      "region_id": "trajectory_region_04",
+      "label": "Trajectory Region 4",
+      "start_index": 157,
+      "end_index": 202,
+      "frame_count": 46,
+      "start_image": "000157_1773736735928081965.png",
+      "end_image": "000202_1773736754298068071.png",
+      "path_length": 5.32503385822694,
+      "representatives": "000157_1773736735928081965.png;000166_1773736739554986361.png;000175_1773736743176133489.png;000184_1773736746909621340.png;000193_1773736750699733122.png;000202_1773736754298068071.png"
+    },
+    {
+      "region_id": "trajectory_region_05",
+      "label": "Trajectory Region 5",
+      "start_index": 203,
+      "end_index": 235,
+      "frame_count": 33,
+      "start_image": "000203_1773736754706453398.png",
+      "end_image": "000235_1773736767833959339.png",
+      "path_length": 5.355803854882269,
+      "representatives": "000203_1773736754706453398.png;000209_1773736757104145360.png;000216_1773736760073286765.png;000222_1773736762580753144.png;000229_1773736765455407905.png;000235_1773736767833959339.png"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scene 09 Room-Level Region Demo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, Arial, sans-serif;
+      color: #16202a;
+      background: #f6f7f9;
+    }
+    body {
+      margin: 0;
+      padding: 28px;
+    }
+    header {
+      max-width: 1180px;
+      margin: 0 auto 22px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .summary {
+      color: #596575;
+      margin: 0;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+    .region-card {
+      background: #ffffff;
+      border: 1px solid #dde2e8;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .region-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid #e8ecf1;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 19px;
+    }
+    .region-header span {
+      color: #667384;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+    }
+    dl {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 0 16px;
+    }
+    dl div {
+      min-width: 0;
+    }
+    dt {
+      color: #6a7483;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    dd {
+      margin: 0;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .thumb-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    figure {
+      margin: 0;
+      border: 1px solid #e1e6ec;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fbfcfd;
+    }
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    figcaption {
+      padding: 7px 8px;
+      font-size: 12px;
+      color: #4e5b69;
+      overflow-wrap: anywhere;
+    }
+    @media (max-width: 720px) {
+      body {
+        padding: 16px;
+      }
+      dl {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scene 09 Room-Level Region Demo</h1>
+    <p class="summary">Fixed-frame image strategy prototype for room-level region partitioning. Region names are editable labels for manual review.</p>
+  </header>
+  <main>
+    
+      <section class="region-card">
+        <div class="region-header">
+          <h2>Region 1</h2>
+          <span>region_01</span>
+        </div>
+        <dl>
+          <div><dt>Frame range</dt><dd>0 - 47</dd></div>
+          <div><dt>Frame count</dt><dd>48</dd></div>
+          <div><dt>Start</dt><dd>000000_1773736671619937584.png</dd></div>
+          <div><dt>End</dt><dd>000047_1773736691337742981.png</dd></div>
+        </dl>
+        <div class="thumb-grid">
+          <figure><img src="thumbnails/region_01/000000_1773736671619937584.jpg" alt="000000_1773736671619937584.png"><figcaption>000000_1773736671619937584.png</figcaption></figure>
+<figure><img src="thumbnails/region_01/000009_1773736675355510405.jpg" alt="000009_1773736675355510405.png"><figcaption>000009_1773736675355510405.png</figcaption></figure>
+<figure><img src="thumbnails/region_01/000019_1773736679539588475.jpg" alt="000019_1773736679539588475.png"><figcaption>000019_1773736679539588475.png</figcaption></figure>
+<figure><img src="thumbnails/region_01/000028_1773736683566407383.jpg" alt="000028_1773736683566407383.png"><figcaption>000028_1773736683566407383.png</figcaption></figure>
+<figure><img src="thumbnails/region_01/000038_1773736687683151165.jpg" alt="000038_1773736687683151165.png"><figcaption>000038_1773736687683151165.png</figcaption></figure>
+<figure><img src="thumbnails/region_01/000047_1773736691337742981.jpg" alt="000047_1773736691337742981.png"><figcaption>000047_1773736691337742981.png</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="region-card">
+        <div class="region-header">
+          <h2>Region 2</h2>
+          <span>region_02</span>
+        </div>
+        <dl>
+          <div><dt>Frame range</dt><dd>48 - 95</dd></div>
+          <div><dt>Frame count</dt><dd>48</dd></div>
+          <div><dt>Start</dt><dd>000048_1773736691741164560.png</dd></div>
+          <div><dt>End</dt><dd>000095_1773736710717956698.png</dd></div>
+        </dl>
+        <div class="thumb-grid">
+          <figure><img src="thumbnails/region_02/000048_1773736691741164560.jpg" alt="000048_1773736691741164560.png"><figcaption>000048_1773736691741164560.png</figcaption></figure>
+<figure><img src="thumbnails/region_02/000057_1773736695451930487.jpg" alt="000057_1773736695451930487.png"><figcaption>000057_1773736695451930487.png</figcaption></figure>
+<figure><img src="thumbnails/region_02/000067_1773736699518125812.jpg" alt="000067_1773736699518125812.png"><figcaption>000067_1773736699518125812.png</figcaption></figure>
+<figure><img src="thumbnails/region_02/000076_1773736703223477168.jpg" alt="000076_1773736703223477168.png"><figcaption>000076_1773736703223477168.png</figcaption></figure>
+<figure><img src="thumbnails/region_02/000086_1773736707206906425.jpg" alt="000086_1773736707206906425.png"><figcaption>000086_1773736707206906425.png</figcaption></figure>
+<figure><img src="thumbnails/region_02/000095_1773736710717956698.jpg" alt="000095_1773736710717956698.png"><figcaption>000095_1773736710717956698.png</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="region-card">
+        <div class="region-header">
+          <h2>Region 3</h2>
+          <span>region_03</span>
+        </div>
+        <dl>
+          <div><dt>Frame range</dt><dd>96 - 143</dd></div>
+          <div><dt>Frame count</dt><dd>48</dd></div>
+          <div><dt>Start</dt><dd>000096_1773736711058461655.png</dd></div>
+          <div><dt>End</dt><dd>000143_1773736730169804799.png</dd></div>
+        </dl>
+        <div class="thumb-grid">
+          <figure><img src="thumbnails/region_03/000096_1773736711058461655.jpg" alt="000096_1773736711058461655.png"><figcaption>000096_1773736711058461655.png</figcaption></figure>
+<figure><img src="thumbnails/region_03/000105_1773736714610690416.jpg" alt="000105_1773736714610690416.png"><figcaption>000105_1773736714610690416.png</figcaption></figure>
+<figure><img src="thumbnails/region_03/000115_1773736718843997825.jpg" alt="000115_1773736718843997825.png"><figcaption>000115_1773736718843997825.png</figcaption></figure>
+<figure><img src="thumbnails/region_03/000124_1773736722454512679.jpg" alt="000124_1773736722454512679.png"><figcaption>000124_1773736722454512679.png</figcaption></figure>
+<figure><img src="thumbnails/region_03/000134_1773736726515052611.jpg" alt="000134_1773736726515052611.png"><figcaption>000134_1773736726515052611.png</figcaption></figure>
+<figure><img src="thumbnails/region_03/000143_1773736730169804799.jpg" alt="000143_1773736730169804799.png"><figcaption>000143_1773736730169804799.png</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="region-card">
+        <div class="region-header">
+          <h2>Region 4</h2>
+          <span>region_04</span>
+        </div>
+        <dl>
+          <div><dt>Frame range</dt><dd>144 - 191</dd></div>
+          <div><dt>Frame count</dt><dd>48</dd></div>
+          <div><dt>Start</dt><dd>000144_1773736730568401079.png</dd></div>
+          <div><dt>End</dt><dd>000191_1773736749908189090.png</dd></div>
+        </dl>
+        <div class="thumb-grid">
+          <figure><img src="thumbnails/region_04/000144_1773736730568401079.jpg" alt="000144_1773736730568401079.png"><figcaption>000144_1773736730568401079.png</figcaption></figure>
+<figure><img src="thumbnails/region_04/000153_1773736734265373472.jpg" alt="000153_1773736734265373472.png"><figcaption>000153_1773736734265373472.png</figcaption></figure>
+<figure><img src="thumbnails/region_04/000163_1773736738336884014.jpg" alt="000163_1773736738336884014.png"><figcaption>000163_1773736738336884014.png</figcaption></figure>
+<figure><img src="thumbnails/region_04/000172_1773736741981610166.jpg" alt="000172_1773736741981610166.png"><figcaption>000172_1773736741981610166.png</figcaption></figure>
+<figure><img src="thumbnails/region_04/000182_1773736746108941985.jpg" alt="000182_1773736746108941985.png"><figcaption>000182_1773736746108941985.png</figcaption></figure>
+<figure><img src="thumbnails/region_04/000191_1773736749908189090.jpg" alt="000191_1773736749908189090.png"><figcaption>000191_1773736749908189090.png</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="region-card">
+        <div class="region-header">
+          <h2>Region 5</h2>
+          <span>region_05</span>
+        </div>
+        <dl>
+          <div><dt>Frame range</dt><dd>192 - 235</dd></div>
+          <div><dt>Frame count</dt><dd>44</dd></div>
+          <div><dt>Start</dt><dd>000192_1773736750307527098.png</dd></div>
+          <div><dt>End</dt><dd>000235_1773736767833959339.png</dd></div>
+        </dl>
+        <div class="thumb-grid">
+          <figure><img src="thumbnails/region_05/000192_1773736750307527098.jpg" alt="000192_1773736750307527098.png"><figcaption>000192_1773736750307527098.png</figcaption></figure>
+<figure><img src="thumbnails/region_05/000201_1773736753904006162.jpg" alt="000201_1773736753904006162.png"><figcaption>000201_1773736753904006162.png</figcaption></figure>
+<figure><img src="thumbnails/region_05/000209_1773736757104145360.jpg" alt="000209_1773736757104145360.png"><figcaption>000209_1773736757104145360.png</figcaption></figure>
+<figure><img src="thumbnails/region_05/000218_1773736760906742119.jpg" alt="000218_1773736760906742119.png"><figcaption>000218_1773736760906742119.png</figcaption></figure>
+<figure><img src="thumbnails/region_05/000226_1773736764295220464.jpg" alt="000226_1773736764295220464.png"><figcaption>000226_1773736764295220464.png</figcaption></figure>
+<figure><img src="thumbnails/region_05/000235_1773736767833959339.jpg" alt="000235_1773736767833959339.png"><figcaption>000235_1773736767833959339.png</figcaption></figure>
+        </div>
+      </section>
+
+  </main>
+</body>
+</html>

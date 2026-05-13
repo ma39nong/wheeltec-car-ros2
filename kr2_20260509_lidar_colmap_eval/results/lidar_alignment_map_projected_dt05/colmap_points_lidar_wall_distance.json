@@ -1,0 +1,32 @@
+[
+  {
+    "name": "sift",
+    "points_loaded": 82453,
+    "points_inside_map": 82379,
+    "inside_map_percent": 99.91025190108303,
+    "mean_wall_distance_m": 0.48472687425223115,
+    "median_wall_distance_m": 0.4000000059604645,
+    "p90_wall_distance_m": 0.75,
+    "p95_wall_distance_m": 0.929534912109375,
+    "max_wall_distance_m": 17.424470901489258,
+    "within_0.10m_percent": 8.337076196603503,
+    "within_0.20m_percent": 19.389650274948714,
+    "within_0.30m_percent": 31.58693356316537,
+    "within_0.50m_percent": 68.51382026972892
+  },
+  {
+    "name": "lightglue",
+    "points_loaded": 28317,
+    "points_inside_map": 28317,
+    "inside_map_percent": 100.0,
+    "mean_wall_distance_m": 0.4862458780759162,
+    "median_wall_distance_m": 0.38984498381614685,
+    "p90_wall_distance_m": 0.9000000357627869,
+    "p95_wall_distance_m": 1.339379906654358,
+    "max_wall_distance_m": 5.855194091796875,
+    "within_0.10m_percent": 9.60906875728361,
+    "within_0.20m_percent": 21.58067591905922,
+    "within_0.30m_percent": 33.5875975562383,
+    "within_0.50m_percent": 65.3035279160928
+  }
+]

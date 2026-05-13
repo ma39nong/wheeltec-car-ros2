@@ -1,0 +1,17 @@
+name: sift_colmap_001700_stride4
+tum: kr2_20260509_lidar_colmap_eval/runs/sift_colmap_manual_loop_000030_001700_stride4_skip934-985_overlap30/results/trajectory_plots/trajectory.tum
+odom: kr2_20260509_lidar_colmap_eval/outputs/odom/map_base_footprint.csv
+associations: 17
+max_dt_sec: 0.08
+best_visual_axes: xz
+scale: 0.57975696
+rmse_m: 0.279503
+mean_error_m: 0.208049
+median_error_m: 0.156302
+max_error_m: 0.702734
+odom_path_length_m: 13.797847
+aligned_visual_path_length_m: 12.552289
+odom_loop_closure_m: 0.240486
+aligned_visual_loop_closure_m: 0.736006
+loop_closure_delta_m: 0.495520
+aligned_csv: kr2_20260509_lidar_colmap_eval/results/lidar_alignment_map_tf/sift_colmap_001700_stride4/aligned_trajectory.csv

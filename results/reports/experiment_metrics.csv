@@ -1,0 +1,2 @@
+run_id,scene_name,total_images,registered_images,sparse_points,duration_sec,success,changed_variable,variable_value,notes
+20260424_163439,scene_01,89,3,185,36.00,yes,none,baseline,

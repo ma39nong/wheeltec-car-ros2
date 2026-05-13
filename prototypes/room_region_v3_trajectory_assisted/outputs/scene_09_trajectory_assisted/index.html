@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V3 Trajectory-Assisted Region Demo</title>
+  <style>
+    body { margin: 0; padding: 28px; font-family: Arial, sans-serif; background: #f5f7fa; color: #16202a; }
+    header, main { max-width: 1180px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .note { color: #5d6878; line-height: 1.5; }
+    section { background: white; border: 1px solid #dfe5ec; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+    h2 { margin: 0 0 6px; font-size: 19px; }
+    h2 span { float: right; color: #687586; font-size: 13px; font-weight: 400; }
+    p { color: #576474; margin: 0 0 14px; }
+    object { width: 100%; height: 420px; border: 1px solid #e0e5eb; border-radius: 6px; background: #f8fafc; }
+    .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    figure { margin: 0; border: 1px solid #e0e5eb; border-radius: 6px; overflow: hidden; background: #fbfcfd; }
+    img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    figcaption { padding: 7px 8px; font-size: 12px; color: #4f5b69; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>V3 Trajectory-Assisted Region Demo</h1>
+    <p class="note">Boundaries are selected from COLMAP camera-center trajectory positions by splitting cumulative path length into balanced regions.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Trajectory Overview</h2>
+      <object data="trajectory_overview.svg" type="image/svg+xml"></object>
+    </section>
+    
+      <section>
+        <h2>Trajectory Region 1 <span>trajectory_region_01</span></h2>
+        <p>Frames 0 - 57 · 58 images · path length 5.338</p>
+        <div class="thumbs"><figure><img src="thumbnails/trajectory_region_01/000000_1773736671619937584.jpg" alt="000000_1773736671619937584.png"><figcaption>000000_1773736671619937584.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_01/000011_1773736676142770390.jpg" alt="000011_1773736676142770390.png"><figcaption>000011_1773736676142770390.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_01/000023_1773736681255185865.jpg" alt="000023_1773736681255185865.png"><figcaption>000023_1773736681255185865.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_01/000034_1773736685986494522.jpg" alt="000034_1773736685986494522.png"><figcaption>000034_1773736685986494522.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_01/000046_1773736690949942254.jpg" alt="000046_1773736690949942254.png"><figcaption>000046_1773736690949942254.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_01/000057_1773736695451930487.jpg" alt="000057_1773736695451930487.png"><figcaption>000057_1773736695451930487.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>Trajectory Region 2 <span>trajectory_region_02</span></h2>
+        <p>Frames 58 - 105 · 48 images · path length 5.225</p>
+        <div class="thumbs"><figure><img src="thumbnails/trajectory_region_02/000058_1773736695826768285.jpg" alt="000058_1773736695826768285.png"><figcaption>000058_1773736695826768285.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_02/000067_1773736699518125812.jpg" alt="000067_1773736699518125812.png"><figcaption>000067_1773736699518125812.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_02/000077_1773736703623507821.jpg" alt="000077_1773736703623507821.png"><figcaption>000077_1773736703623507821.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_02/000086_1773736707206906425.jpg" alt="000086_1773736707206906425.png"><figcaption>000086_1773736707206906425.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_02/000096_1773736711058461655.jpg" alt="000096_1773736711058461655.png"><figcaption>000096_1773736711058461655.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_02/000105_1773736714610690416.jpg" alt="000105_1773736714610690416.png"><figcaption>000105_1773736714610690416.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>Trajectory Region 3 <span>trajectory_region_03</span></h2>
+        <p>Frames 106 - 156 · 51 images · path length 5.191</p>
+        <div class="thumbs"><figure><img src="thumbnails/trajectory_region_03/000106_1773736715118810147.jpg" alt="000106_1773736715118810147.png"><figcaption>000106_1773736715118810147.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_03/000116_1773736719246926058.jpg" alt="000116_1773736719246926058.png"><figcaption>000116_1773736719246926058.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_03/000126_1773736723286954491.jpg" alt="000126_1773736723286954491.png"><figcaption>000126_1773736723286954491.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_03/000136_1773736727338623877.jpg" alt="000136_1773736727338623877.png"><figcaption>000136_1773736727338623877.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_03/000146_1773736731373945405.jpg" alt="000146_1773736731373945405.png"><figcaption>000146_1773736731373945405.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_03/000156_1773736735435861564.jpg" alt="000156_1773736735435861564.png"><figcaption>000156_1773736735435861564.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>Trajectory Region 4 <span>trajectory_region_04</span></h2>
+        <p>Frames 157 - 202 · 46 images · path length 5.325</p>
+        <div class="thumbs"><figure><img src="thumbnails/trajectory_region_04/000157_1773736735928081965.jpg" alt="000157_1773736735928081965.png"><figcaption>000157_1773736735928081965.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_04/000166_1773736739554986361.jpg" alt="000166_1773736739554986361.png"><figcaption>000166_1773736739554986361.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_04/000175_1773736743176133489.jpg" alt="000175_1773736743176133489.png"><figcaption>000175_1773736743176133489.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_04/000184_1773736746909621340.jpg" alt="000184_1773736746909621340.png"><figcaption>000184_1773736746909621340.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_04/000193_1773736750699733122.jpg" alt="000193_1773736750699733122.png"><figcaption>000193_1773736750699733122.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_04/000202_1773736754298068071.jpg" alt="000202_1773736754298068071.png"><figcaption>000202_1773736754298068071.png</figcaption></figure></div>
+      </section>
+
+      <section>
+        <h2>Trajectory Region 5 <span>trajectory_region_05</span></h2>
+        <p>Frames 203 - 235 · 33 images · path length 5.356</p>
+        <div class="thumbs"><figure><img src="thumbnails/trajectory_region_05/000203_1773736754706453398.jpg" alt="000203_1773736754706453398.png"><figcaption>000203_1773736754706453398.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_05/000209_1773736757104145360.jpg" alt="000209_1773736757104145360.png"><figcaption>000209_1773736757104145360.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_05/000216_1773736760073286765.jpg" alt="000216_1773736760073286765.png"><figcaption>000216_1773736760073286765.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_05/000222_1773736762580753144.jpg" alt="000222_1773736762580753144.png"><figcaption>000222_1773736762580753144.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_05/000229_1773736765455407905.jpg" alt="000229_1773736765455407905.png"><figcaption>000229_1773736765455407905.png</figcaption></figure>
+<figure><img src="thumbnails/trajectory_region_05/000235_1773736767833959339.jpg" alt="000235_1773736767833959339.png"><figcaption>000235_1773736767833959339.png</figcaption></figure></div>
+      </section>
+
+  </main>
+</body>
+</html>
