@@ -1,6 +1,8 @@
-# wheeltec_colmap
+# wheeltec-car-ros2
 
-This workspace is a dedicated COLMAP experiment area for Wheeltec room-scale data.
+Keyirobot Wheeltec car ROS2 system and COLMAP/LiDAR evaluation workspace.
+
+This repository includes a dedicated COLMAP experiment area for Wheeltec room-scale data.
 It is organized around four immediate goals:
 
 1. Build a stable reference trajectory on one fixed scene.
@@ -8,7 +10,7 @@ It is organized around four immediate goals:
 3. Prepare a minimal room-labeling prototype workspace.
 4. Compare classical and learned local-feature pipelines against the same reference.
 
-## Recommended workflow
+## Recommended Workflow
 
 1. Put one image sequence into `data/scene_01/images`.
 2. Adjust `configs/experiment.env` if needed.
@@ -54,8 +56,10 @@ python3 scripts/summarize_sparse_model.py \
 - `results/exports`: packaged artifacts
 - `prototypes/room_classifier`: minimal room-label prototype area
 - `comparisons`: notes and results for feature-descriptor comparison
+- `kr2_20260509_lidar_colmap_eval`: 2026-05-09 LiDAR/COLMAP alignment evaluation
+- `kr2_learned_descriptors_phase2`: SuperPoint + LightGlue front-end scripts and configs
 
-## First milestone checklist
+## First Milestone Checklist
 
 - Sparse model exists at `workspace/colmap/sparse/0`
 - TUM trajectory exists at `results/trajectory_plots/trajectory.tum`
